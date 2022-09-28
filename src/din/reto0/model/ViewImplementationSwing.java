@@ -4,7 +4,7 @@ import din.reto0.ui.SwingView;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ViewImplementationSwing implements View {
 

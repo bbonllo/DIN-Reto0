@@ -5,7 +5,7 @@ import javafx.application.Application;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ViewImplementationJavaFX implements View {
 

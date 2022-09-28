@@ -7,7 +7,7 @@ import din.reto0.model.ViewFactory;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class DINReto0 {
 

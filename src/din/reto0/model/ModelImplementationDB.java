@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ModelImplementationDB implements Model{
     

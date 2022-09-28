@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ModelImplementationFileTest {
 

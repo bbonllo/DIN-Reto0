@@ -2,7 +2,7 @@ package din.reto0.ui;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class SwingView extends java.awt.Frame {
 

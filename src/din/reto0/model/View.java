@@ -7,7 +7,7 @@ package din.reto0.model;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public interface View {
 

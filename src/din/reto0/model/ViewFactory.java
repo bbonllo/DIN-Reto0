@@ -4,7 +4,7 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ViewFactory {
 

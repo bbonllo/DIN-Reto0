@@ -6,7 +6,7 @@ import din.reto0.model.View;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class Controller {
 

@@ -15,7 +15,7 @@ public class ModelFactory {
 
     /**
      *
-     * it initializes the model and interpretes either you are in the database
+     * It initializes the model and interpretes either you are in the database
      * or in the File
      *
      */

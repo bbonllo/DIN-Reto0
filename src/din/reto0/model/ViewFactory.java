@@ -15,6 +15,8 @@ public class ViewFactory {
     private static String javaFX;
 
     /**
+     * It initializes the view and interpretes either you are in the Terminal
+     * view, Swing view or JavaFx view
      *
      * @return view
      */

@@ -26,7 +26,7 @@ public class ConnectionOpenClose {
      * Gets the information from a .properties file and sets it into variables
      */
     public ConnectionOpenClose() {
-        configFile = ResourceBundle.getBundle("din.reto0.config");
+        configFile = ResourceBundle.getBundle("din.reto0.main.config");
         url = configFile.getString("URL");
         user = configFile.getString("USER");
         pass = configFile.getString("PASSWORD");

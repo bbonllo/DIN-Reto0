@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din.reto0.model;
 
 import java.util.ResourceBundle;
 
 /**
  *
- * @author lucas
+ * @author Janam & Unai
  */
 public class ModelFactory {
 
@@ -18,6 +13,12 @@ public class ModelFactory {
     private static String dataBase;
     private static String file;
 
+    /**
+     *
+     * it initializes the model and interpretes either you are in the database
+     * or in the File
+     *
+     */
     public static Model getModel() {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
         dataBase = configFile.getString("DB");

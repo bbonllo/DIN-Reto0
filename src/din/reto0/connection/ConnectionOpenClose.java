@@ -23,7 +23,7 @@ public class ConnectionOpenClose {
 
     /**
      *
-     * Gets the information from a .propertis file and sets it into variables
+     * Gets the information from a .properties file and sets it into variables
      */
     public ConnectionOpenClose() {
         configFile = ResourceBundle.getBundle("din.reto0.config");

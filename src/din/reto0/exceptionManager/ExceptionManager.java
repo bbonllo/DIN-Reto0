@@ -1,4 +1,4 @@
-package din.exceptionManager;
+package din.reto0.exceptionManager;
 
 /**
  *

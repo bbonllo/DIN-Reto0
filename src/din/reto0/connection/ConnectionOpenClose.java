@@ -1,4 +1,4 @@
-package din.connection;
+package din.reto0.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import din.exceptionManager.ExceptionManager;
+import din.reto0.exceptionManager.ExceptionManager;
 
 /**
  *

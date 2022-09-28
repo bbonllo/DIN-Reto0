@@ -5,7 +5,7 @@
  */
 package din.reto0.model;
 
-import din.exceptionManager.ExceptionManager;
+import din.reto0.exceptionManager.ExceptionManager;
 import java.util.ResourceBundle;
 
 /**
@@ -19,7 +19,7 @@ public class ModelImplementationFile implements Model {
 
     @Override
     public String getGreeting() throws ExceptionManager{
-        configFile = ResourceBundle.getBundle("din.reto0.config");
+        configFile = ResourceBundle.getBundle("din.reto0.main.config");
         greeting = configFile.getString("GREET");
         return greeting;
     }

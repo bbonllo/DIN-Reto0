@@ -5,8 +5,8 @@
  */
 package din.reto0.model;
 
-import din.connection.ConnectionOpenClose;
-import din.exceptionManager.ExceptionManager;
+import din.reto0.connection.ConnectionOpenClose;
+import din.reto0.exceptionManager.ExceptionManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

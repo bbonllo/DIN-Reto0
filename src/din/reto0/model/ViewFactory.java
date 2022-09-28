@@ -20,7 +20,7 @@ public class ViewFactory {
     private static String javaFX;
 
     public static View getView() {
-        configFile = ResourceBundle.getBundle("din.reto0.config");
+        configFile = ResourceBundle.getBundle("din.reto0.main.config");
         terminal = configFile.getString("TERMINAL");
         swing = configFile.getString("SWING");
         javaFX = configFile.getString("JFX");

@@ -1,6 +1,6 @@
-package din.controller;
+package din.reto0.controller;
 
-import din.exceptionManager.ExceptionManager;
+import din.reto0.exceptionManager.ExceptionManager;
 import din.reto0.model.Model;
 import din.reto0.model.View;
 

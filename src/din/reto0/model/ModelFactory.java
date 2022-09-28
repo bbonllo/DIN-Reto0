@@ -19,7 +19,7 @@ public class ModelFactory {
     private static String file;
 
     public static Model getModel() {
-        configFile = ResourceBundle.getBundle("din.reto0.config");
+        configFile = ResourceBundle.getBundle("din.reto0.main.config");
         dataBase = configFile.getString("DB");
         file = configFile.getString("FILE");
 

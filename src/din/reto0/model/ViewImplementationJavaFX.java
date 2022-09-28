@@ -5,7 +5,7 @@
  */
 package din.reto0.model;
 
-import din.exceptionManager.ExceptionManager;
+import din.reto0.exceptionManager.ExceptionManager;
 import din.reto0.ui.JavaFXView;
 import javafx.application.Application;
 

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din.reto0.model;
 
 import din.reto0.connection.ConnectionOpenClose;
@@ -14,7 +9,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author lucas
+ * @author Janam & Unai
  */
 public class ModelImplementationDB implements Model{
     
@@ -22,6 +17,14 @@ public class ModelImplementationDB implements Model{
     private PreparedStatement stmt;
     private ConnectionOpenClose conection = new ConnectionOpenClose();
 
+    
+    /**
+     * 
+     * Its opens the database and gets the GREET message
+     * 
+     * @return
+     * @throws ExceptionManager 
+     */
     @Override
     public String getGreeting() throws ExceptionManager {
         ResultSet rs = null;

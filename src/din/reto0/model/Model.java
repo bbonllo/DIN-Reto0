@@ -10,10 +10,11 @@ public interface Model {
 
     /**
      * 
-     * Me
+     * Interface method to get the greeting
      * 
      * @return String
      * @throws ExceptionManager 
+     * 
      */
     public String getGreeting() throws ExceptionManager;
 

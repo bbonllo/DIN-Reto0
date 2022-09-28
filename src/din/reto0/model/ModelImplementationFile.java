@@ -17,6 +17,13 @@ public class ModelImplementationFile implements Model {
     protected ResourceBundle configFile;
     protected String greeting;
 
+     /**
+     * 
+     * Its opens the File and gets the GREET message
+     * 
+     * @return
+     * @throws ExceptionManager 
+     */
     @Override
     public String getGreeting() throws ExceptionManager{
         configFile = ResourceBundle.getBundle("din.reto0.main.config");

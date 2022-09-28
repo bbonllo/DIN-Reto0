@@ -7,10 +7,15 @@ package din.reto0.model;
 
 /**
  *
- * @author unaib
+ * @author Janam & Unai
  */
 public interface View {
-    
+
+    /**
+     * Intrerface method to show the greeting
+     *
+     * @param greet
+     */
     public void showGreeting(String greet);
-    
+
 }

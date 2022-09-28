@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package din.reto0.model;
 
 import java.util.ResourceBundle;
 
 /**
  *
- * @author lucas
+ * @author Janam & Unai
  */
 public class ViewFactory {
 
@@ -19,6 +14,10 @@ public class ViewFactory {
     private static String swing;
     private static String javaFX;
 
+    /**
+     *
+     * @return view
+     */
     public static View getView() {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
         terminal = configFile.getString("TERMINAL");

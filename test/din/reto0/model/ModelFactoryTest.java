@@ -14,14 +14,12 @@ public class ModelFactoryTest {
     }
     
     /**
-     * Test the getModel method
+     * Test of getModel method, of class ModelFactory.
      */
     @Test
     public void testGetModel() throws ExceptionManager {
-        View v = ViewFactory.getView();
         Model m = ModelFactory.getModel();
         
-        assertNotNull(v);
         assertNotNull(m);
     }
 }

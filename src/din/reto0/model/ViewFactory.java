@@ -10,9 +10,7 @@ public class ViewFactory {
 
     private static View view;
     private static ResourceBundle configFile;
-    private static String terminal;
-    private static String swing;
-    private static String javaFX;
+    private static String viewSelect;
 
     /**
      * It initializes the view and interpretes either you are in the Terminal
@@ -22,17 +20,15 @@ public class ViewFactory {
      */
     public static View getView() {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
-        terminal = configFile.getString("TERMINAL");
-        swing = configFile.getString("SWING");
-        javaFX = configFile.getString("JFX");
+        viewSelect = configFile.getString("VIEW");
 
-        if (swing.equalsIgnoreCase("true")) {
+        if (viewSelect.equalsIgnoreCase("true")) {
             view = new ViewImplementationSwing();
 
-        } else if (terminal.equalsIgnoreCase("true")) {
+        } else if (viewSelect.equalsIgnoreCase("true")) {
             view = new ViewImplementationTerminal();
 
-        } else if (javaFX.equalsIgnoreCase("true")) {
+        } else if (viewSelect.equalsIgnoreCase("true")) {
             view = new ViewImplementationJavaFX();
 
         }

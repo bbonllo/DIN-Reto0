@@ -10,8 +10,7 @@ public class ModelFactory {
 
     private static Model model;
     private static ResourceBundle configFile;
-    private static String dataBase;
-    private static String file;
+    private static String data;
 
     /**
      *
@@ -21,13 +20,12 @@ public class ModelFactory {
      */
     public static Model getModel() {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
-        dataBase = configFile.getString("DB");
-        file = configFile.getString("FILE");
+        data = configFile.getString("DATA");
 
-        if (dataBase.equalsIgnoreCase("true")) {
+        if (data.equalsIgnoreCase("true")) {
             model = new ModelImplementationDB();
 
-        } else if (file.equalsIgnoreCase("true")) {
+        } else if (data.equalsIgnoreCase("true")) {
             model = new ModelImplementationFile();
 
         }

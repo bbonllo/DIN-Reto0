@@ -17,15 +17,16 @@ public class ModelFactory {
      * It initializes the model and interpretes either you are in the database
      * or in the File
      *
+     * @return model
      */
     public static Model getModel() {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
         data = configFile.getString("DATA");
 
-        if (data.equalsIgnoreCase("true")) {
+        if (data.equalsIgnoreCase("DB")) {
             model = new ModelImplementationDB();
 
-        } else if (data.equalsIgnoreCase("true")) {
+        } else if (data.equalsIgnoreCase("FILE")) {
             model = new ModelImplementationFile();
 
         }

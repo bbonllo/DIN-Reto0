@@ -22,13 +22,13 @@ public class ViewFactory {
         configFile = ResourceBundle.getBundle("din.reto0.main.config");
         viewSelect = configFile.getString("VIEW");
 
-        if (viewSelect.equalsIgnoreCase("true")) {
+        if (viewSelect.equalsIgnoreCase("SWING")) {
             view = new ViewImplementationSwing();
 
-        } else if (viewSelect.equalsIgnoreCase("true")) {
+        } else if (viewSelect.equalsIgnoreCase("TERMINAL")) {
             view = new ViewImplementationTerminal();
 
-        } else if (viewSelect.equalsIgnoreCase("true")) {
+        } else if (viewSelect.equalsIgnoreCase("JFX")) {
             view = new ViewImplementationJavaFX();
 
         }

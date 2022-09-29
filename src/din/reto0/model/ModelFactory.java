@@ -1,5 +1,6 @@
 package din.reto0.model;
 
+import din.reto0.exceptionManager.ExceptionManager;
 import java.util.ResourceBundle;
 
 /**
@@ -19,16 +20,17 @@ public class ModelFactory {
      *
      * @return model
      */
-    public static Model getModel() {
-        configFile = ResourceBundle.getBundle("din.reto0.main.config");
-        data = configFile.getString("DATA");
-
-        if (data.equalsIgnoreCase("DB")) {
-            model = new ModelImplementationDB();
-
-        } else if (data.equalsIgnoreCase("FILE")) {
-            model = new ModelImplementationFile();
-
+    public static Model getModel() throws ExceptionManager {
+        
+        switch (ResourceBundle.getBundle("din.reto0.main.config").getString("DATA")) {
+            case "DB":
+                model = new ModelImplementationDB();
+                break;
+            case "FILE":
+                model = new ModelImplementationFile();
+                break;
+            default:
+                throw new ExceptionManager("Not valid value");
         }
 
         return model;

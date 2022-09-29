@@ -1,5 +1,6 @@
 package din.reto0.model;
 
+import din.reto0.exceptionManager.ExceptionManager;
 import java.util.ResourceBundle;
 
 /**
@@ -18,19 +19,20 @@ public class ViewFactory {
      *
      * @return view
      */
-    public static View getView() {
-        configFile = ResourceBundle.getBundle("din.reto0.main.config");
-        viewSelect = configFile.getString("VIEW");
+    public static View getView() throws ExceptionManager {
 
-        if (viewSelect.equalsIgnoreCase("SWING")) {
-            view = new ViewImplementationSwing();
-
-        } else if (viewSelect.equalsIgnoreCase("TERMINAL")) {
-            view = new ViewImplementationTerminal();
-
-        } else if (viewSelect.equalsIgnoreCase("JFX")) {
-            view = new ViewImplementationJavaFX();
-
+        switch (ResourceBundle.getBundle("din.reto0.main.config").getString("VIEW")) {
+            case "SWING":
+                view = new ViewImplementationSwing();
+                break;
+            case "TERMINAL":
+                view = new ViewImplementationTerminal();
+                break;
+            case "JFX":
+                view = new ViewImplementationJavaFX();
+                break;
+            default:
+                throw new ExceptionManager("Not valid value");
         }
 
         return view;

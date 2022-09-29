@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 /**
- * In this package you control the model
+ * In this package you get the controller
  */
-package din.reto0.model;
+package din.reto0.controller;

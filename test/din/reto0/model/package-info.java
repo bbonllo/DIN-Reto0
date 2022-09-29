@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 /**
- * In this package you control the model
+ * In this package you do the test
  */
 package din.reto0.model;

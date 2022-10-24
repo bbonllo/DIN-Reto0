@@ -4,7 +4,7 @@ import din.reto0.exceptionManager.ExceptionManager;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public interface Model {
 

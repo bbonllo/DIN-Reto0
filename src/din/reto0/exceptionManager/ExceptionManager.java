@@ -2,7 +2,7 @@ package din.reto0.exceptionManager;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ExceptionManager extends Exception {
 

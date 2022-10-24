@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class JavaFXView extends Application {
 

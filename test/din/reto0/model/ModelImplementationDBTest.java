@@ -8,19 +8,19 @@ import static org.junit.Assert.*;
  *
  * @author JanamUnai;
  */
-public class ModelImplementationFileTest {
-
-    public ModelImplementationFileTest() {
+public class ModelImplementationDBTest {
+    
+    public ModelImplementationDBTest() {
     }
 
     /**
-     * Test of getGreeting method, of class ModelImplementationFile.
+     * Test of getGreeting method, of class ModelImplementationDB.
      */
     @Test
     public void testGetGreeting() throws ExceptionManager {
-        String greet = "Hola Archivo";
-        ModelImplementationFile m = new ModelImplementationFile();
+        String greet = "Hola DB";
+        ModelImplementationDB m = new ModelImplementationDB();
         assertEquals(greet, m.getGreeting());
     }
-
+    
 }

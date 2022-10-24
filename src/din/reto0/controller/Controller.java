@@ -6,11 +6,9 @@ import din.reto0.model.View;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class Controller {
-
-    private static String greet;
 
     /**
      *
@@ -23,8 +21,7 @@ public class Controller {
      * sends it to the view.
      */
     public void run(View view, Model model) throws ExceptionManager {
-        greet = model.getGreeting();
-        view.showGreeting(greet);
+        view.showGreeting(model.getGreeting());
     }
 
 }

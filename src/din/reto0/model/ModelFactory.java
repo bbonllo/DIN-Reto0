@@ -1,35 +1,36 @@
 package din.reto0.model;
 
+import din.reto0.exceptionManager.ExceptionManager;
 import java.util.ResourceBundle;
 
 /**
  *
- * @author Janam & Unai
+ * @author JanamUnai;
  */
 public class ModelFactory {
 
     private static Model model;
     private static ResourceBundle configFile;
-    private static String dataBase;
-    private static String file;
+    private static String data;
 
     /**
      *
      * It initializes the model and interpretes either you are in the database
      * or in the File
      *
+     * @return model
      */
-    public static Model getModel() {
-        configFile = ResourceBundle.getBundle("din.reto0.main.config");
-        dataBase = configFile.getString("DB");
-        file = configFile.getString("FILE");
-
-        if (dataBase.equalsIgnoreCase("true")) {
-            model = new ModelImplementationDB();
-
-        } else if (file.equalsIgnoreCase("true")) {
-            model = new ModelImplementationFile();
-
+    public static Model getModel() throws ExceptionManager {
+        
+        switch (ResourceBundle.getBundle("din.reto0.main.config").getString("DATA")) {
+            case "DB":
+                model = new ModelImplementationDB();
+                break;
+            case "FILE":
+                model = new ModelImplementationFile();
+                break;
+            default:
+                throw new ExceptionManager("Not valid value");
         }
 
         return model;
